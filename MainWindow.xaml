@@ -1,0 +1,107 @@
+﻿<Window x:Class="PlanIT.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PlanIT"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="Gray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Background="Tan"></StackPanel>
+        <Grid Grid.Row="0" Grid.Column="1" Background="Gainsboro">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" x:Name="LeftArrow" Content="&lt;-" 
+                    Click="LeftArrow_Click"/>
+            
+            <Label Grid.Column="1" x:Name="SelectedMothName" 
+                     VerticalContentAlignment="Center" 
+                     HorizontalContentAlignment="Center"/>
+            
+            <Button Grid.Column="2" x:Name="RightArrow" Content="-&gt;" 
+                    Click="RightArrow_Click"/>
+
+        </Grid>
+        <Grid x:Name="MonthGrid" Grid.Row="1" Grid.Column="1" Background="Khaki">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="CalendarField1" Grid.Row="0" Grid.Column="0" Background="AliceBlue" Text="Monday"/>
+            <TextBlock x:Name="CalendarField2" Grid.Row="0" Grid.Column="1" Text="Tuesday"/>
+            <TextBlock x:Name="CalendarField3" Grid.Row="0" Grid.Column="2" Text="Wednesday"/>
+            <TextBlock x:Name="CalendarField4" Grid.Row="0" Grid.Column="3" Text="Thursday"/>
+            <TextBlock x:Name="CalendarField5" Grid.Row="0" Grid.Column="4" Text="Friday"/>
+            <TextBlock x:Name="CalendarField6" Grid.Row="0" Grid.Column="5" Text="Saturday"/>
+            <TextBlock x:Name="CalendarField7" Grid.Row="0" Grid.Column="6" Text="Sunday"/>
+            <TextBlock x:Name="CalendarField8" Grid.Row="1" Grid.Column="0"/>
+            <TextBlock x:Name="CalendarField9" Grid.Row="1" Grid.Column="1" />
+            <TextBlock x:Name="CalendarField10" Grid.Row="1" Grid.Column="2"/>
+            <TextBlock x:Name="CalendarField11" Grid.Row="1" Grid.Column="3"/>
+            <TextBlock x:Name="CalendarField12" Grid.Row="1" Grid.Column="4"/>
+            <TextBlock x:Name="CalendarField13" Grid.Row="1" Grid.Column="5"/>
+            <TextBlock x:Name="CalendarField14" Grid.Row="1" Grid.Column="6"/>
+            <TextBlock x:Name="CalendarField15" Grid.Row="2" Grid.Column="0"/>
+            <TextBlock x:Name="CalendarField16" Grid.Row="2" Grid.Column="1"/>
+            <TextBlock x:Name="CalendarField17" Grid.Row="2" Grid.Column="2" />
+            <TextBlock x:Name="CalendarField18" Grid.Row="2" Grid.Column="3"/>
+            <TextBlock x:Name="CalendarField19" Grid.Row="2" Grid.Column="4"/>
+            <TextBlock x:Name="CalendarField20" Grid.Row="2" Grid.Column="5"/>
+            <TextBlock x:Name="CalendarField21" Grid.Row="2" Grid.Column="6"/>
+            <TextBlock x:Name="CalendarField22" Grid.Row="3" Grid.Column="0"/>
+            <TextBlock x:Name="CalendarField23" Grid.Row="3" Grid.Column="1"/>
+            <TextBlock x:Name="CalendarField24" Grid.Row="3" Grid.Column="2"/>
+            <TextBlock x:Name="CalendarField25" Grid.Row="3" Grid.Column="3"/>
+            <TextBlock x:Name="CalendarField26" Grid.Row="3" Grid.Column="4"/>
+            <TextBlock x:Name="CalendarField27" Grid.Row="3" Grid.Column="5"/>
+            <TextBlock x:Name="CalendarField28" Grid.Row="3" Grid.Column="6"/>
+            <TextBlock x:Name="CalendarField29" Grid.Row="4" Grid.Column="0"/>
+            <TextBlock x:Name="CalendarField30" Grid.Row="4" Grid.Column="1"/>
+            <TextBlock x:Name="CalendarField31" Grid.Row="4" Grid.Column="2"/>
+            <TextBlock x:Name="CalendarField32" Grid.Row="4" Grid.Column="3"/>
+            <TextBlock x:Name="CalendarField33" Grid.Row="4" Grid.Column="4"/>
+            <TextBlock x:Name="CalendarField34" Grid.Row="4" Grid.Column="5"/>
+            <TextBlock x:Name="CalendarField35" Grid.Row="4" Grid.Column="6"/>
+            <TextBlock x:Name="CalendarField36" Grid.Row="5" Grid.Column="0"/>
+            <TextBlock x:Name="CalendarField37" Grid.Row="5" Grid.Column="1"/>
+            <TextBlock x:Name="CalendarField38" Grid.Row="5" Grid.Column="2"/>
+            <TextBlock x:Name="CalendarField39" Grid.Row="5" Grid.Column="3"/>
+            <TextBlock x:Name="CalendarField40" Grid.Row="5" Grid.Column="4"/>
+            <TextBlock x:Name="CalendarField41" Grid.Row="5" Grid.Column="5"/>
+            <TextBlock x:Name="CalendarField42" Grid.Row="5" Grid.Column="6"/>
+            <TextBlock x:Name="CalendarField43" Grid.Row="6" Grid.Column="0"/>
+            <TextBlock x:Name="CalendarField44" Grid.Row="6" Grid.Column="1"/>
+            <TextBlock x:Name="CalendarField45" Grid.Row="6" Grid.Column="2"/>
+            <TextBlock x:Name="CalendarField46" Grid.Row="6" Grid.Column="3"/>
+            <TextBlock x:Name="CalendarField47" Grid.Row="6" Grid.Column="4"/>
+            <TextBlock x:Name="CalendarField48" Grid.Row="6" Grid.Column="5"/>
+            <TextBlock x:Name="CalendarField49" Grid.Row="6" Grid.Column="6"/>
+        </Grid>
+    </Grid>
+</Window>
